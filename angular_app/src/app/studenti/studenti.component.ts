@@ -54,4 +54,8 @@ export class StudentiComponent implements OnInit {
     this.prikaziSakrijObrisane = !this.prikaziSakrijObrisane;
     this.fetchStudenti();
   }
+
+  otvoriMaticnuKnjigu(student: any) {
+    this.router.navigate(["student-maticnaknjiga/",student.id]);
+  }
 }

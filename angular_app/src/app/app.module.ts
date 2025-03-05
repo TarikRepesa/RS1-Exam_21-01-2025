@@ -33,7 +33,7 @@ import {StudentAddComponent} from "./studenti/student-add/student-add.component"
       {path: 'studenti', component: StudentiComponent},
       {path: 'login', component: LoginComponent},
       {path: 'registracija', component: RegistracijaComponent},
-      {path: 'student-maticnaknjiga/:id', component: StudentMaticnaknjigaComponent},
+      {path: 'student-maticnaknjiga/:StudentIdParametar', component: StudentMaticnaknjigaComponent},
       {path: 'home', component: HomeComponent, canActivate: [AutorizacijaLoginProvjera]},
       {path: 'postavke-profila', component: PostavkeProfilaComponent, canActivate: [AutorizacijaLoginProvjera]},
       {path: '**', component: NotFoundComponent, canActivate: [AutorizacijaLoginProvjera]},
