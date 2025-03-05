@@ -21,13 +21,16 @@ export class StudentiComponent implements OnInit {
   filter_opstina: boolean;
   filterDatumRodjenja: any = '0';
   combobox_opcije = ComboBox_Opcije.opcije;
+  prikaziSakrijObrisane = true;
 
   constructor(private httpKlijent: HttpClient, private router: Router) {
   }
 
   fetchStudenti() :void
   {
-    this.httpKlijent.get(`${MojConfig.adresa_servera}/Student/GetAll?filterDatumRodjenja=${this.filterDatumRodjenja != 0 ? this.filterDatumRodjenja : ""}`, MojConfig.http_opcije()).subscribe(x=>{
+    this.httpKlijent.get(`${MojConfig.adresa_servera}/Student/GetAll?filterDatumRodjenja=${this.filterDatumRodjenja != 0 ? this.filterDatumRodjenja : ""}` +
+      `&prikaziSakrijObrisane=${this.prikaziSakrijObrisane}`
+      , MojConfig.http_opcije()).subscribe(x=>{
       this.studentPodaci = x;
     });
   }
@@ -37,6 +40,18 @@ export class StudentiComponent implements OnInit {
   }
 
   filtrirajDatum() {
+    this.fetchStudenti();
+  }
+
+  obrisiStudenta(student: any) {
+    this.httpKlijent.post(`${MojConfig.adresa_servera}/ispit/soft_delete_student`,{StudentID: student.id}, MojConfig.http_opcije()).subscribe(x=>{
+      porukaSuccess(`Student ${student.ime} ${student.prezime} je uspjesno obrisan!`);
+      this.fetchStudenti();
+    });   
+  }
+
+  prikaziSakrijDeleted() {
+    this.prikaziSakrijObrisane = !this.prikaziSakrijObrisane;
     this.fetchStudenti();
   }
 }

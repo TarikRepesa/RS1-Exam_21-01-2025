@@ -4,7 +4,8 @@
  <label>Filter po datumu rodjenja: </label>
  <select [(ngModel)]="filterDatumRodjenja" (change)="filtrirajDatum()">
   <option *ngFor="let o of combobox_opcije" [value]="o.value">{{o.text}}</option>
- </select>
+ </select><br>
+  <button (click)="prikaziSakrijDeleted()">{{prikaziSakrijObrisane ? "Sakrij obrisane" : "Prikazi obrisane"}}</button>
   <hr>
 </div>
 <table class="table table-warning">
@@ -20,7 +21,7 @@
     <th>Akcija</th>
   </tr>
   <tbody>
-  <tr *ngFor="let s of this.studentPodaci">
+  <tr *ngFor="let s of this.studentPodaci" [className]="(s.obrisan ? 'obrisano' : '')">
     <td>{{s.id}}</td>
     <td>{{s.ime}}</td>
     <td>{{s.prezime}}</td>
@@ -30,7 +31,7 @@
     <td>{{s.created_time}}</td>
     <td>{{s.datumRodjenja.substring(0,10)}}</td>
     <td>
-      <button>Obrisi</button>
+      <button (click)="obrisiStudenta(s)">Obrisi</button>
       <button>Uredi</button>
       <button>Maticna knjiga</button>
     </td>
