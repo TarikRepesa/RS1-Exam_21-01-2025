@@ -13,6 +13,6 @@ namespace FIT_Api_Examples.Data
         public int? opstina_rodjenja_id { get; set; }
         public Opstina opstina_rodjenja { get; set; }
         public DateTime created_time { get; set; }
-
+        public DateTime DatumRodjenja { get; set; }
     }
 }

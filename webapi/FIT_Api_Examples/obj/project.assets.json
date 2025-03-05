@@ -6549,11 +6549,12 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
+      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6632,23 +6633,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adil\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Korisnik\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
+      "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
       "projectName": "FIT_Api_Examples",
-      "projectPath": "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
-      "packagesPath": "C:\\Users\\adil\\.nuget\\packages\\",
-      "outputPath": "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\obj\\",
+      "projectPath": "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
+      "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\adil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6656,6 +6658,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6728,7 +6731,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

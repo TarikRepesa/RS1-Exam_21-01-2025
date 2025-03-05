@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj": {}
   },
   "projects": {
-    "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
         "projectName": "FIT_Api_Examples",
-        "projectPath": "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
-        "packagesPath": "C:\\Users\\adil\\.nuget\\packages\\",
-        "outputPath": "C:\\tmp\\New folder (3)\\rs1-2024-01-23-ispitni-zadaci\\webapi\\FIT_Api_Examples\\obj\\",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\FIT_Api_Examples.csproj",
+        "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\RS1-Exam_21-01-2025\\webapi\\FIT_Api_Examples\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

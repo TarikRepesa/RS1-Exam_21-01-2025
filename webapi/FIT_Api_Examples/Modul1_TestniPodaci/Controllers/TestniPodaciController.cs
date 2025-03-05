@@ -104,7 +104,8 @@ namespace FIT_Api_Examples.Modul1_TestniPodaci.Controllers
                    korisnickoIme = TokenGenerator.GenerisiIme(5),
                    lozinka="test",
                    opstina_rodjenja=opstine.GetRandomElements(1)[0],
-                   slika_korisnika = Config.SlikeURL + "empty.png"
+                   slika_korisnika = Config.SlikeURL + "empty.png",
+                   DatumRodjenja = new DateTime(rnd.Next(1990,1999),1, 1)
                 });
             }
 
