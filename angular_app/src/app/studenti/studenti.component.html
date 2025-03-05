@@ -1,12 +1,10 @@
 <p>studenti works!</p>
 
 <div>
-  <input [(ngModel)] = "filter_ime_prezime" type="checkbox"> Filter by <span style="font-weight: bold">Ime / prezime</span> <br>
-  <input [(ngModel)]="ime_prezime"><br>
-  <hr>
-
-  <input [(ngModel)] = "filter_opstina" type="checkbox"> Filter by <span style="font-weight: bold">Opština rođenja</span> <br>
-  <input [(ngModel)]="opstina"><br>
+ <label>Filter po datumu rodjenja: </label>
+ <select [(ngModel)]="filterDatumRodjenja" (change)="filtrirajDatum()">
+  <option *ngFor="let o of combobox_opcije" [value]="o.value">{{o.text}}</option>
+ </select>
   <hr>
 </div>
 <table class="table table-warning">
