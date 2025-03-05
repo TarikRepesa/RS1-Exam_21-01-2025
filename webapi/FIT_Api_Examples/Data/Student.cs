@@ -14,5 +14,6 @@ namespace FIT_Api_Examples.Data
         public Opstina opstina_rodjenja { get; set; }
         public DateTime created_time { get; set; }
         public DateTime DatumRodjenja { get; set; }
+        public bool Obrisan { get; set; } = false;
     }
 }

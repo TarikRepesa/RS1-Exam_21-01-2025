@@ -20,7 +20,7 @@ namespace FIT_Api_Examples.Modul2.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Student>> GetAll(int? filterDatumRodjenja)
+        public ActionResult<List<Student>> GetAll(int? filterDatumRodjenja, bool? prikaziSakrijObrisane)
         {
             KorisnickiNalog logiraniKorisnik = HttpContext.GetLoginInfo().korisnickiNalog;
 
@@ -32,6 +32,7 @@ namespace FIT_Api_Examples.Modul2.Controllers
             var data = _dbContext.Student
                 .Include(s => s.opstina_rodjenja.drzava)
                 .Where(x => filterDatumRodjenja == null || x.DatumRodjenja.Year >= filterDatumRodjenja && x.DatumRodjenja.Year <= filterDatumRodjenja + 1)
+                .Where(x => prikaziSakrijObrisane == null || prikaziSakrijObrisane == true || prikaziSakrijObrisane == false && x.Obrisan == false)
                 .OrderByDescending(s => s.id)
                 .AsQueryable();
             return data.Take(100).ToList();
@@ -39,3 +40,5 @@ namespace FIT_Api_Examples.Modul2.Controllers
 
     }
 }
+
+
