@@ -56,6 +56,12 @@ export class StudentiComponent implements OnInit {
   }
 
   otvoriMaticnuKnjigu(student: any) {
+    if(student.obrisan)
+    {
+      porukaError(`Ovaj student je obrisan, molimo odaberite postojeceg studenta!`);
+      return; 
+    }
+    
     this.router.navigate(["student-maticnaknjiga/",student.id]);
   }
 }
