@@ -40,17 +40,17 @@
   </thead>
 
   <tbody>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+  <tr *ngFor="let m of this.maticnaKnjigaPodaci">
+    <td>{{m.id}}</td>
+    <td>{{m.akademskaGodina.opis}}</td>
+    <td>{{m.godina}}</td>
+    <td>{{m.obnova}}</td>
     <td>
-      <input> |
-      <input>
+      <input [value]="m.datumUpisa"> |
+      <input [value]="m.datumOvjere">
     </td>
 
-    <td></td>
+    <td>{{m.evidentirao.korisnickoIme}}</td>
     <td>
       <a class="btn btn-link">Ovjeri zimski semestar </a> <br>
 

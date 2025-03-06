@@ -15,7 +15,7 @@ export class StudentMaticnaknjigaComponent implements OnInit {
 
   studentID:any;
   studentiPodaci:any;
-
+  maticnaKnjigaPodaci:any;
 
   constructor(private httpKlijent: HttpClient, private route: ActivatedRoute) {}
 
@@ -39,11 +39,18 @@ export class StudentMaticnaknjigaComponent implements OnInit {
     )
 
     this.ucitajStudente();
+    this.ucitajMaticnuKnjigu();
   }
 
   ucitajStudente() {
     this.httpKlijent.get(`${MojConfig.adresa_servera}/ispit/get_student_by_id?Id=${this.studentID}`, MojConfig.http_opcije()).subscribe(x=>{
       this.studentiPodaci = x;
+    });
+  }
+
+  ucitajMaticnuKnjigu() {
+    this.httpKlijent.get(`${MojConfig.adresa_servera}/ispit/get_maticna_knjiga_by_student_id?StudentId=${this.studentID}`, MojConfig.http_opcije()).subscribe(x=>{
+      this.maticnaKnjigaPodaci = x;
     });
   }
 }
