@@ -85,4 +85,21 @@ export class StudentMaticnaknjigaComponent implements OnInit {
     this.noviUpis = null;
     this.ucitajMaticnuKnjigu();
   }
+
+  setCijenaObnova() {
+    let cijenaSkolarine = 1800;
+    let obnova = false;
+
+    for (let i = 0; i < this.maticnaKnjigaPodaci.length; i++) {
+      const element = this.maticnaKnjigaPodaci[i];
+      
+      if(element.godina == this.noviUpis.godina)
+      {
+        obnova = true;
+        cijenaSkolarine = 400;
+      }
+    } 
+    this.noviUpis.cijenaSkolarine = cijenaSkolarine;
+     this.noviUpis.obnova = obnova;
+  }
 }
