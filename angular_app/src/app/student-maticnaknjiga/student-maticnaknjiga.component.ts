@@ -38,6 +38,10 @@ export class StudentMaticnaknjigaComponent implements OnInit {
       }
     )
 
+    this.ucitajStudente();
+  }
+
+  ucitajStudente() {
     this.httpKlijent.get(`${MojConfig.adresa_servera}/ispit/get_student_by_id?Id=${this.studentID}`, MojConfig.http_opcije()).subscribe(x=>{
       this.studentiPodaci = x;
     });
